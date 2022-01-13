@@ -9,13 +9,13 @@ import configparser
 
 #var
 config = configparser.ConfigParser()
-git_dir = "./test-repo"
-git = git.cmd.Git(git_dir)
 config.read('config.ini')
 info = config['info']
 repo_name = info['repo-name']
 owner_username = info['owner-username']
 token = info['token']
+git_dir = "./" + repo_name
+git = git.cmd.Git(git_dir)
 g = Github(token)
 repo = g.get_repo(owner_username+"/"+repo_name)
 filename = info['filename']
