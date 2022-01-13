@@ -73,4 +73,3 @@ def check():
 sleep(5)
 if doneworking == True:
     check()
-# repo.delete_file(updatefile.path, "remove update", updatefile.sha, branch="main")
