@@ -15,7 +15,7 @@ put the repository's owner's name here.
 generate an api token by going to `Settings > Developer settings > Personal access tokens` and then clicking on `Generate new token` configure it however you'd like and then paste it into the config file.
 ### filename 🗄️
 put the name of the file you want to trigger the update function here. file extensions also work
-### sleeptime 💤
+### sleep-amount 💤
 put the amount of time (in seconds) that you want the program to wait inbetween checks here.
 
 ## problem? 🤖
