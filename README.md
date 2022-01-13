@@ -1,5 +1,5 @@
 # autopull
-Simple python tool that allows you to pull
+Simple python tool that allows you to automatically pull from a github repository whenever a file with a specified name is uploaded
 ## installation
 1. clone the repo or download source as zip
 2. choose the options you want in config.ini
