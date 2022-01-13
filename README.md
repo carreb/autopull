@@ -19,4 +19,5 @@ put the name of the file you want to trigger the update function here. file exte
 put the amount of time (in seconds) that you want the program to wait inbetween checks here.
 
 ## problem?
-leave an issue and i'll get back to you!
+open an issue and i'll get back to you!  
+feel free to leave feature requests, bug reports, or any other thing you need to let me know about.
