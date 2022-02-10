@@ -45,6 +45,7 @@ def startup():
         except:
            print("Failed to create updatefile!")
            exit()
+    clearcommand()
 startup()
 
 
