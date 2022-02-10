@@ -21,6 +21,12 @@ repo = g.get_repo(owner_username+"/"+repo_name)
 filename = info['filename']
 sleepamount = int(info['sleep-amount'])
 
+def clearcommand():
+    global clear
+    clear = 'clear'
+    if os.name in ('nt', 'dos'):
+        command = 'cls'
+
 def startup():
     global updatefile
     global doneworking
@@ -44,7 +50,7 @@ startup()
 
 def check():
     while True:
-        os.system("cls")
+        os.system(clear)
         now = str(datetime.now())
         contents = repo.get_contents("")
         try:
@@ -54,7 +60,7 @@ def check():
         print("[" + now + "] Checking for updates...")
         for ContentFile in contents:
             if ContentFile.name == filename:
-                os.system('cls')
+                os.system(clear)
                 print("[" + now + "] Update file found!")
                 print("[" + now + "] Removing update file...")
                 try:
